@@ -107,7 +107,15 @@ footer span{
   color: #068FFF;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
 }
+
+.formRegister input[type=submit]:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 .sectionRegister p {
   margin-top: 20px;
 }
@@ -116,8 +124,7 @@ footer span{
   color: #068FFF;
 }
 
-/*message*/
-
+/*MESSAGE*/
 .message{
   padding: 1rem;
   color: var(--blue);
@@ -127,4 +134,178 @@ footer span{
   text-align: center;
   margin: 0 auto 2rem;
   width: 60%;
+}
+
+/** CRIAR PENSAMENTO */
+.tought-form-container h1{
+  margin-top: 30px;
+}
+
+
+.tought-form-container form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.tought-form-container label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tought-form-container input {
+  border: 2px solid white;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.tought-form-container input[type=submit]{
+  margin-top: 20px ;
+  max-width: 200px;
+  border-color: #068FFF;
+  color: #068FFF;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.tought-form-container h1::before {
+  content: "";
+  padding: 3px;
+  margin-right: 5px;
+  background-color: #068FFF;
+}
+
+/** Seção do dashboard */
+
+.dashboard{
+  margin: 0 100px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-container h1::before{
+  content: "";
+  padding: 3px;
+  margin-right: 5px;
+  background-color: var(--blue);
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.dashboard li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--blue);
+}
+
+.dashboard ul {
+  margin-top: 20px;
+}
+
+.dashboard form {
+  display: inline;
+  margin: 2px 5px;
+}
+/*home*/
+.home-header{
+display: flex;
+flex-flow: column wrap;
+max-width: 60%;
+margin: 0 auto;
+text-align: center;
+}
+
+.home-header h1{
+  margin-bottom: 1rem;
+}
+
+.home-header a{
+  color: var(--white);
+}
+
+.home-header p,
+.home-header form{
+  margin-bottom: 1rem;
+}
+
+.home-header input{
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.home-header input[type="text"]{
+  width: 60%;
+  font: 18px;
+}
+
+.home-header input::placeholder{
+  color: var(--white);
+}
+
+.order-container{
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 80%;
+margin: 0 auto 1rem;
+}
+
+.order-container form{
+margin: 0;
+}
+
+.order-container span{
+font-weight: bold;
+color: var(--white);
+}
+
+.order-container button{
+margin-bottom: 0;
+border: none;
+cursor: pointer;
+}
+
+.order-container button:hover,
+.order-container i:hover,
+.order-container a:hover{
+  color: var(--blue);
+}
+
+.order-container button:hover,
+.order-container i:hover,
+.order-container a:hover{
+  margin: 0.7px;
+}
+
+/*home pensamnetos*/
+.toughts-container figure{
+  border-bottom: 1px solid #333;
+  padding: 0.5rem;
+  max-width: 50%;
+  margin: 0 auto 1rem;
+}
+
+.toughts-container blockquote{
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom:  0.4rem;
+}
+
+.toughts-container{
+color:  var(--blue);
 }
